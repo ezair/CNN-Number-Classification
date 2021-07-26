@@ -48,7 +48,7 @@ def main():
 
     test(testing_set=test_loader, model=model)
 
-    # Save model to file encoded file.
+    # Save model to an encoded file for later use.
     torch.save(
         model,
         os.cwd() + "models/ConvNetwork.pt",

@@ -3,7 +3,6 @@
 
 import torch
 import torch.nn
-import torch.nn.functional as F
 
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
