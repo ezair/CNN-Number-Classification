@@ -18,6 +18,7 @@ from classify.train_test import train, test
 def main():
     batch_size = 64
 
+    # Normalize/scale the incoming data.
     transform_normalizer = transforms.Compose(
         [transforms.ToTensor(), transforms.Normalize(mean=(0.5,), std=(0.5,))]
     )
